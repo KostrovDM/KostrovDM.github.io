@@ -1,0 +1,248 @@
+@font-face{
+    font-family: PF BeauSans Pro-Bold;
+    src: url(fonts/PFBeauSansPro-Bold.ttf);
+}
+@font-face{
+    font-family: PF BeauSans Pro-Regular;
+    src: url(fonts/PFBeauSansPro-Reg.ttf);
+}
+@mixin style-view ($height){
+    border-color: $purp;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 15px;
+        // height: 75vh;
+        height: $height;
+        background-color: white;
+}
+@mixin style-button {
+    font-family: $fontReg;
+    background-color: $purp;
+    color: white;
+    border-radius: 15px;
+    height: 25px;
+    width: 15%;
+    margin: 5px;
+    border-width: 1px;
+}
+$purp: #7c2d63;
+$gray: #cccdd5;
+$fontBold: PF BeauSans Pro-Bold;
+$fontReg: PF BeauSans Pro-Regular;
+header{
+    background-color: $purp;
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    #logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        font-family: $fontBold;
+        font-size: 16pt;
+        img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+    #search{
+        width:35%;
+        justify-content: space-around;
+        font-family: $fontReg;
+        display: inline-flex;
+        align-items: center;
+        input{
+            height: 25px;
+            width: 400px;
+            border-radius: 15px;
+            border: 0px;
+        }
+    }
+    #button{
+        font-family: $fontReg;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25%;
+        a{
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        img{
+            height: 20px;
+            width: 20px;
+            padding-left: 5px;
+        }
+    }
+}
+body{
+    // background-color: $gray;
+    margin: 0;
+}
+main{
+    font-family: $fontReg;
+    display: flex;
+    flex-direction: column;
+    #category{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #CatText{
+            font-family: $fontBold;
+            font-size: 14pt;
+            width: 25vmax;
+            text-align: center;
+        }
+        #CatButton{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100vmax;
+        }
+        input{
+            @include style-button;
+        }
+    }
+    #view{
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        #filters{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+            
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            @include style-view (75vh);
+            width: 250px;
+            margin-left: 5px;
+            margin-right: 5px;
+            .title{
+                font-family: $fontBold;
+                font-size: 14pt;
+                text-align: center;
+            }
+            .param{
+                // height: 2vmin;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                input{
+                    width: 100%;
+                    margin: 2px;
+                    border-radius: 15px;
+                    border-width: 1px;
+                    height: 20px;
+                }
+                input[type=checkbox] {
+                    width: auto;
+                }
+                select{
+                    width: 100%;
+                    margin: 5px;
+                    border-radius: 15px;
+                    height: 25px;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                }
+                .value{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    div{
+                        width: auto;
+                        text-align:start;
+                    }
+                }
+            }
+            input[type=button]{
+                @include style-button;
+                width: 100%;
+                margin: 0px;
+            }
+        }
+        #BackPacks{
+            @include style-view (auto);
+            // width: 75vmax;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-left: 5px;
+            width: 100%;
+            padding-top: 20px;
+            
+            .card{
+                background-color: $gray;
+                height: 365px;
+                width: 280px;
+                border-radius: 15px;
+                transition: 0.4s;
+                margin: 25px;
+                .imgWrapper{
+                    background-color: white;
+                    width: 280px;
+                    border-radius: 15px 15px 0px 0px;
+                    height: auto;
+                    img{
+                        width: 280px;
+                        // border-radius: 15px 15px 0px 0px;
+                        // height: auto;
+                    }
+                }
+                .CardFooter{
+                    display: flex;
+                    flex-direction:  column;
+                    text-align: center;
+                    vertical-align: middle;
+                    margin-top: 4%;
+                    .button{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            visibility: hidden;
+                            img{
+                                height: 20px;
+                                width: 20px;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .card:hover{
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                transform: scale(1.05);
+                .button{
+                    a{
+                        visibility: visible;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+footer{
+    margin-top: 20px;
+    background-color: $gray;
+    height: 100px;
+}
