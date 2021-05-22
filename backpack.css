@@ -1,0 +1,331 @@
+@font-face {
+  font-family: PF BeauSans Pro-Bold;
+  src: url(fonts/PFBeauSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: PF BeauSans Pro-Regular;
+  src: url(fonts/PFBeauSansPro-Reg.ttf);
+}
+
+header {
+  background-color: #7c2d63;
+  height: 60px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 65px;
+  padding-right: 65px;
+  margin-bottom: 10px;
+}
+
+header #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: PF BeauSans Pro-Bold;
+  font-size: 16pt;
+  color: white;
+  text-decoration: none;
+}
+
+header #logo img {
+  height: 60px;
+  width: 60px;
+}
+
+header #button {
+  font-family: PF BeauSans Pro-Regular;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+}
+
+header #button a {
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #button img {
+  height: 20px;
+  width: 20px;
+  padding-left: 5px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  font-family: PF BeauSans Pro-Regular;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #BackPack {
+  border-color: #7c2d63;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  height: auto;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+}
+
+main #BackPack .photo {
+  background-color: #cccdd5;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 25px;
+}
+
+main #BackPack .photo .imgWrapper {
+  background-color: white;
+  width: 280px;
+  border-radius: 15px 15px 15px 15px;
+  height: auto;
+}
+
+main #BackPack .photo .imgWrapper img {
+  width: 280px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+main #BackPack .photo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #BackPack .photo:hover .button input {
+  visibility: visible;
+}
+
+main #BackPack .photo:hover .button input:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+main #BackPack .AboutBP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #BackPack .AboutBP .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #BackPack .AboutBP .button input {
+  height: 20px;
+  width: 20px;
+  padding-left: 5px;
+}
+
+main #BackPack .AboutBP .button input:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+main #BackPack .AboutBP .Price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #BackPack .AboutBP .Price div {
+  margin-left: 5px;
+}
+
+main #BackPack .AboutBP .Price img {
+  height: 20px;
+  width: 20px;
+}
+
+main #BackPack .AboutBP .BPName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #BackPack .AboutBP .BPName div {
+  margin-left: 5px;
+}
+
+footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  background-color: #cccdd5;
+}
+
+footer .title {
+  font-family: PF BeauSans Pro-Bold;
+  font-size: 14pt;
+  text-align: left;
+}
+
+footer .info {
+  padding-top: 15px;
+  font-family: PF BeauSans Pro-Regular;
+  font-size: 10pt;
+  text-align: left;
+}
+
+footer .imagePay {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .imagePay .row1, footer .imagePay .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .imageSoc {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=backpack.css.map */
