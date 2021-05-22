@@ -37,13 +37,16 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 10px;
 
     #logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-family: $fontBold;
         font-size: 16pt;
+        color: white;
+        text-decoration: none;
         img{
             height: 60px;
             width: 60px;
@@ -84,134 +87,85 @@ header{
     }
 }
 body{
-    // background-color: $gray;
     margin: 0;
 }
 main{
     font-family: $fontReg;
-    display: flex;
-    flex-direction: column;
-    #category{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        #CatText{
-            font-family: $fontBold;
-            font-size: 14pt;
-            width: 25vmax;
-            text-align: center;
-        }
-        #CatButton{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 100vmax;
-        }
-        input{
-            @include style-button;
-        }
-    }
+    // display: flex;
+    // flex-direction: row;
     #view{
         display: flex;
         height: auto;
         flex-direction: row;
-        #filters{
-            position: -webkit-sticky;
-            position: sticky;
-            top: 20px;
-            
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            @include style-view (75vh);
-            width: 250px;
-            margin-left: 5px;
-            margin-right: 5px;
-            .title{
-                font-family: $fontBold;
-                font-size: 14pt;
-                text-align: center;
-            }
-            .param{
-                // height: 2vmin;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-                input{
-                    width: 100%;
-                    margin: 2px;
-                    border-radius: 15px;
-                    border-width: 1px;
-                    height: 20px;
-                }
-                input[type=checkbox] {
-                    width: auto;
-                }
-                select{
-                    width: 100%;
-                    margin: 5px;
-                    border-radius: 15px;
-                    height: 25px;
-                    padding-left: 2px;
-                    padding-right: 2px;
-                }
-                .value{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    div{
-                        width: auto;
-                        text-align:start;
-                    }
-                }
-            }
-            input[type=button]{
-                @include style-button;
-                width: 100%;
-                margin: 0px;
-            }
-        }
         #BackPacks{
             @include style-view (auto);
-            // width: 75vmax;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-around;
             margin-left: 5px;
+            margin-right: 5px;
             width: 100%;
             padding-top: 20px;
-            
+            padding-left: 40px;
+            padding-right: 40px;
             .card{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 background-color: $gray;
-                height: 350px;
-                width: 280px;
+                height: 70px;
+                width: auto;
                 border-radius: 15px;
-                transition: 0.4s;
-                margin: 25px;
+                transition: 0.3s;
+                margin: 10px;
+
                 .imgWrapper{
                     background-color: white;
-                    width: 280px;
-                    border-radius: 15px 15px 0px 0px;
-                    height: auto;
+                    width: auto;
+                    border-radius: 15px 0px 0px 15px;
+                    height: 70px;
                     img{
-                        width: 280px;
-                        // border-radius: 15px 15px 0px 0px;
-                        // height: auto;
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 15px 0px 0px 15px;
                     }
                 }
                 .CardFooter{
                     display: flex;
-                    flex-direction:  column;
+                    flex-direction:  row;
                     text-align: center;
-                    vertical-align: middle;
-                    margin-top: 4%;
+                    align-items: center;
+                    // vertical-align: middle;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    input{
+                        height: 25px;
+                        // width: 400px;
+                        border-radius: 15px;
+                        border: 0px;
+                    }
+                    .Price{
+                        div{
+                            margin-left: 5px;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                        
+                    }
+                    .BPName{
+                        div{
+                            margin-left: 5px;
+                        }
+                        display: flex;
+                        flex-direction: row;
+                    }
                     .button{
                         display: flex;
                         flex-direction: row;
@@ -224,45 +178,24 @@ main{
                             padding-left: 5px;
                         }
                     }
-                    .Price{
-                        div{
-                            margin-left: 5px;
-                        }
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        img{
-                            height: 20px;
-                            width: 20px;
-                        }
-                    }
-                    .BPName{
-                        div{
-                            margin-left: 5px;
-                        }
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                    }
                 }
             }
             .card:hover{
                 box-shadow: 0 0 10px rgba(0,0,0,0.3);
                 transform: scale(1.05);
-                height: 365px;
                 .button{
                     input{
                         visibility: visible;
                     }
                     input:hover{
-                        // box-shadow: 0 0 10px rgba(0,0,0,0.3);
                         transform: scale(1.08);
                     }
-                    // a{
-                    //     visibility: visible;
-                    // }
                 }
                 
+            }
+            input[type=button]{
+                @include style-button;
+                align-self: center;
             }
         }
     }

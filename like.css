@@ -24,6 +24,7 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 header #logo {
@@ -39,6 +40,8 @@ header #logo {
           align-items: center;
   font-family: PF BeauSans Pro-Bold;
   font-size: 16pt;
+  color: white;
+  text-decoration: none;
 }
 
 header #logo img {
@@ -120,51 +123,6 @@ main {
           flex-direction: column;
 }
 
-main #category {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #category #CatText {
-  font-family: PF BeauSans Pro-Bold;
-  font-size: 14pt;
-  width: 25vmax;
-  text-align: center;
-}
-
-main #category #CatButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100vmax;
-}
-
-main #category input {
-  font-family: PF BeauSans Pro-Regular;
-  background-color: #7c2d63;
-  color: white;
-  border-radius: 15px;
-  height: 25px;
-  width: 15%;
-  margin: 5px;
-  border-width: 1px;
-}
-
 main #view {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,111 +132,6 @@ main #view {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-main #view #filters {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border-color: #7c2d63;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 15px;
-  height: 75vh;
-  background-color: #f1f1f1;
-  width: 250px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-main #view #filters .title {
-  font-family: PF BeauSans Pro-Bold;
-  font-size: 14pt;
-  text-align: center;
-}
-
-main #view #filters .param {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-main #view #filters .param img {
-  width: 20px;
-  height: 20px;
-}
-
-main #view #filters .param input {
-  width: 100%;
-  margin: 2px;
-  border-radius: 15px;
-  border-width: 1px;
-  height: 20px;
-}
-
-main #view #filters .param input[type=checkbox] {
-  width: auto;
-}
-
-main #view #filters .param select {
-  width: 100%;
-  margin: 5px;
-  border-radius: 15px;
-  height: 25px;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-main #view #filters .param .value {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #view #filters .param .value div {
-  width: auto;
-  text-align: start;
-}
-
-main #view #filters input[type=button] {
-  font-family: PF BeauSans Pro-Regular;
-  background-color: #7c2d63;
-  color: white;
-  border-radius: 15px;
-  height: 25px;
-  width: 15%;
-  margin: 5px;
-  border-width: 1px;
-  width: 100%;
-  margin: 0px;
 }
 
 main #view #BackPacks {
@@ -401,11 +254,9 @@ main #view #BackPacks .card .CardFooter .BPName div {
 }
 
 main #view #BackPacks .card:hover {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 365px;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  height: 365px;
 }
 
 main #view #BackPacks .card:hover .button input {
@@ -500,4 +351,4 @@ footer .imageSoc {
       -ms-flex-align: center;
           align-items: center;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=like.css.map */
