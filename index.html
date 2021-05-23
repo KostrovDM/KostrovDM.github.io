@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="рюкзак, портфель, сумка, походный, школьный, городской, спортивный">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="main.css">
+    <meta property="og:title" content="Главная страница магазина"/>
+    <meta property="og:description" content="В данном магазине вы Сможете подобрать и купить для себя идеальный рюкзак"/>
+    <meta property="og:site_name" content="BackPack Shop"/>
+    <meta property="og:image" content="image/logo.png"/>
+    <meta property="og:image-height" content="300"/>
+    <meta property="og:image-width" content="300"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://github.com/KostrovDM.github.io/"/>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="image/logo.png" alt="Логотип компании в виде рюкзака" title="Логотип">
+            <div>BackPack<br>Shop</div>
+        </div>
+        <div id="search">
+            <div>Поиск</div> 
+            <input type="text">
+            <input type="image" src="image/searchWhite.png" alt="Иконка поиска" title="Поиск">
+        </div>
+        <div id="button">
+            <a href="like.html">
+                <div>Избранное</div>
+                <img src="image/like.png" alt="иконка избранного" title="Избраное">
+            </a>
+            <a href="basket.html">
+                <div>Корзина</div>
+                <img src="image/Shop.png" alt="иконка корзины" title="Корзина">
+            </a>
+            <a href="log-in.html">
+                <div>Войти</div>
+                <img src="image/LogIn.png" alt="иконка входа" title="Вход/регистрация">
+            </a>
+    </header>
+    <main>
+        <div id="category">
+            <div id="CatText">Категории:</div>
+            <div id="CatButton">
+                <input type="button" value="Городские">
+                <input type="image" src="image/city.png">
+                <input type="button" value="Походные">
+                <input type="image" src="image/pohod.png">
+                <input type="button" value="Школьные">
+                <input type="image" src="image/school.png">
+                <input type="button" value="Спортивные">
+                <input type="image" src="image/sport.png">
+            </div>
+        </div>
+        <div id="view">
+            <div id="filters">
+                <div class="title">
+                    Фильтры
+                </div>
+
+                <div id="sum">
+                    <div class="title">
+                        Цена
+                    </div>
+                    <div class="param">
+                        <div class="value">
+                            <div>
+                                От
+                            </div>
+                            <input type="number">
+                            <img src="image/rub.png" alt="символ валюты" title="Рубль">
+                        </div>
+                        <div class="value">
+                            <div>
+                                До
+                            </div>
+                            <input type="number">
+                            <img src="image/rub.png" alt="символ валюты" title="Рубль">
+                        </div>
+                    </div>
+                </div>
+                <div id="V">
+                    <div class="title">
+                        Объем
+                    </div>
+                    <div class="param">
+                        <div class="value">
+                            <div>
+                                Маленький
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                        <div class="value">
+                            <div>
+                                Большой
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div id="sex">
+                    <div class="title">
+                        Пол
+                    </div>
+                    <div class="param">
+                        <div class="value">
+                            <div>
+                                Мужской
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                        <div class="value">
+                            <div>
+                                Женский
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div id="another">
+                    <div class="title">
+                        Другое
+                    </div>
+                    <div class="param">
+                        <div class="value">
+                            <div>
+                                Карманы
+                            </div>
+                            <input type="number">
+                        </div>
+                        <div class="value">
+                            <div>
+                                С чехлом
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                        <div class="value">
+                            <div>
+                                Ткань
+                            </div>
+                            <select>
+                                <option>Ткань 1</option>
+                                <option>Ткань 2</option>
+                                <option>Водонепроницаемая</option>
+                            </select>
+                        </div>
+                        <div class="value">
+                            <div>
+                                Доп. лямка
+                            </div>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Применить">
+            </div>
+            <div id="BackPacks">
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp1.png" alt="описание рюкзака bp1" title="bp1">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp2.png" alt="описание рюкзака bp2" title="bp2">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp3.png" alt="описание рюкзака bp3" title="bp3">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp4.png" alt="описание рюкзака bp4" title="bp4">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp5.png" alt="описание рюкзака bp5" title="bp5">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="backpack.html">
+                        <div class="imgWrapper">
+                            <img src="image/bp6.png" alt="описание рюкзака bp6" title="bp6">
+                        </div>
+                    </a>
+                        <div class="CardFooter">
+                            <div class="Price">
+                                <div class="p">Цена:</div>
+                                <div>300</div>
+                                <div><img src="image/rub.png" alt="символ валюты" title="Рубль"></div>
+                            </div>
+                            <div class="BPName">
+                                <div class="n">Наименование:</div>
+                                <div>BackPacks</div>
+                            </div>
+                        <div class="button">
+                            <input type="image" src="image/likeBlack.png" alt="иконка избранного" title="Избраное">
+                            <input type="image" src="image/shopBlack.png" alt="иконка корзины" title="Корзина">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <div class="title">
+                О нас
+            </div>
+            <div class="info">
+                Нет никаких нас<br>
+                Это всего-лишь проект на РГР, который<br>
+                далее разовьется в курсовую работу,<br>
+                если у меня хватит сил пожить до того момента<br>
+            </div>
+        </div>
+        <div class="pay">
+            <div class="title">
+                Способы оплаты
+            </div>
+            <div class="imagePay">
+                <div class="row1">
+                    <img src="image/paypall.png" alt="payapll" title="Платежная сисетма">
+                    <img src="image/mastercard.png" alt="mastercard" title="Платежная сисетма">
+                </div>
+                <div class="row2">
+                    <img src="image/qiwi.png" alt="qiwi" title="Платежная сисетма">
+                    <img src="image/visa.png" alt="visa" title="Платежная сисетма">
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="title">
+                Мы в соцсетях
+            </div>
+            <div class="imageSoc">
+                <a href="https://vk.com/kos_d_m">
+                    <img src="image/vk.png" alt="vk ссылка" title="VK">
+                </a>
+                <a href="https://www.instagram.com/kostrov_d_m/"> 
+                    <img src="image/insta.png" alt="insta ссылка" title="INSTA">
+                </a>
+                <a href="https://t.me/BackPacks_site">
+                    <img src="image/tg.png" alt="telegram ссылка" title="TELEGRAM">
+                </a>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="title">
+                Контакты
+            </div>
+            <div class="info">
+                +79241944885 <br>
+                Адрес: г.Хабаровск <br>
+                ул.Запарина д.156
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

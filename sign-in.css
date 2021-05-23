@@ -1,0 +1,131 @@
+@font-face {
+  font-family: PF BeauSans Pro-Bold;
+  src: url(fonts/PFBeauSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: PF BeauSans Pro-Regular;
+  src: url(fonts/PFBeauSansPro-Reg.ttf);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20%;
+  background-color: #7c2d63;
+}
+
+main {
+  border-color: #7c2d63;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main input[type=submit] {
+  font-family: PF BeauSans Pro-Regular;
+  background-color: #7c2d63;
+  color: white;
+  border-radius: 15px;
+  height: 25px;
+  width: 15%;
+  margin: 5px;
+  border-width: 1px;
+  width: 100%;
+  margin: 0px;
+  font-family: PF BeauSans Pro-Regular;
+}
+
+main a {
+  font-family: PF BeauSans Pro-Regular;
+}
+
+main .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .enter div {
+  font-family: PF BeauSans Pro-Regular;
+  width: 120px;
+}
+
+main .enter input {
+  width: 100%;
+  margin: 2px;
+  border-radius: 15px;
+  border-width: 1px;
+  height: 20px;
+}
+
+main .title {
+  font-family: PF BeauSans Pro-Bold;
+  font-size: 16pt;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  main .enter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 300px) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/*# sourceMappingURL=sign-in.css.map */
